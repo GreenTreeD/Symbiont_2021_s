@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<title>Server Host</title> 
+<head>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style_mobile.css">
+<meta charset="utf-8">
+</head> 
+<body>
+<div class="container" id='888'>
+
+    <div id='-1' class='winop' style='width:900px; height:1000px; position: absolute; top:25px;left:20px; z-index: 11;'>
+    <center><br><br><br><img src='2---.png' style='width:207px; height:179px;'/> <br><br><br> <span style="top:20px; font-size: 35px;">Требуется авторизация </span><br><br><span style="font-size:25px;padding-bottom:3px"> Имя пользователя: <br></span><div class='winop' style='width:240px;height: 13px;padding: 2px;margin-top: 6px;'></div><br> <span style="font-size:25px;padding-bottom:3px"> Пароль:<br> </span><div class='winop' style='width:240px;height: 13px;padding: 2px;margin-top: 6px;'></div><br></center></div>
+
+
+    <div id='-2' class='winbreak' style='width:400px; height:90px; position: absolute; top:450px;left:100px; z-index: 20; animation: n;'> <center><span style="font-size: 25px; color:#ff001e;">! Ошибка !<br> Требуется подтверждение администратора</span></center></div> 
+
+
+    <!-- читает ли это кто-то? я хз. окно панели пользователя -->
+    <div id='0' class='win' style='position: absolute; bottom: 78px; left: 20px;display: none;'>
+    <p style='text-align: center; margin: 1px; margin-top: 10px;'>Авторизованный <br>  пользователь </p>
+    <span onclick="openclosewin(3)"><center>-> Беркут Сергей <-</center></span><br><br>
+    <span class='panel' onclick='openwin(5)'>Обновления</span><br><br>
+    <span class='panel'>Документы</span><br><br>
+    <span class='panel'>Изображения</span><br><br>
+    <span class='panel'>Устройства</span><br><br>
+    </div>
+
+    <div class='nono' id='1000' style=' display: none;'><center><span style="font-size: 25px; color:#ff001e;">В доступе отказано</span></center></div>
+
+<!--
+    <div id='11' class='win' style='width:200px; text-align: center; position: absolute; z-index: 9;'>
+        <div id='11header' style='z-index: 10;'> тыкаем </div>
+    <span >Testing  </span> <span onclick="closewin(11)">x</span>
+    </div>
+    
+    <br><br>
+    <br><br>
+    <div id="4" class='win' style='position: absolute;'>
+      <div id='4header'>header <span onclick="closewin(4)">_</span><span onclick="closewin(4)">x</span></div>
+      <p>Move</p>
+      <p>this</p>
+      <p>DIV</p>
+
+
+      setTimeout(closewin,3000,-1);
+setTimeout(closewinn,3000,-2);
+    </div> -->
+
+    <div id='3' class='win' style='width:930px; height:1400px; position: absolute; top:25px;left:25px; display: none; z-index: 11;'> 
+    <div id='3header'  style='width:930px; z-index: 12; text-align: right;' ><span onclick="closewin(3)"> _ </span><span onclick="closewin(3)">x</span></div>
+    <span>sed do eiusmod tempor incididunt ut labor<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+    </div>
+
+    <div id='5' class='win' style='width:930px; height:1400px; position: absolute; top:35px;left:28px; display: none; z-index: 10;'> 
+    <div id='5header'  style='width:900px; z-index: 11;' ><span>-> Обновление задания</span><span onclick="closewin(5)" style="position:absolute;right:25px; top:3px;"> _ </span><span onclick="closewin(5)" style="position:absolute;right:10px; top:5px;">x</span></div>
+    <span><br>ОБНОВЛЕНИЕ ЗАДАНИЯ: ОПЕРАЦИЯ «ФБ-2021»<br><br>
+! Внимание! Данное сообщение является подтверждением, что вы являетесь членом руководящего состава операции или персоной с уровнем допуска Ультра !<br>
+Уважаемый ?????, поступило обновление задания, связанного с операцией «ФБ-21», в точке «Убежище М-2» объекта «Симбионт».<br><br>
+По нашим данным, в Убежище (государственная лаборатория особой секретности, специализирующаяся на разработке биологического оружия), произошла утечка боевого вируса модели Z-01.21.<br><br>
+Основные эффекты вируса: необратимые изменения в центральной нервной системе объекта, провоцирующие психозы, потерю контроля над своими действиями, повышенную агрессивность, провалы в памяти, обмороки, смерть.<br><br>
+По распоряжению ????? в лабораторию была послана группа зачистки. Основными их задачами было: уничтожить следы катастрофы; устранить выживших в целях недопущения утечки информации; полная изоляция лаборатории.<br><br>
+Итог операции группы зачистки: полный провал.<br><br>
+Подозреваются выжившие в лаборатории. Доказательства: поведение системы экстренного жизнеобеспечения и блокировки лаборатории. Основной подозреваемый: Соболев Иван Евгеньевич, досье №М200001.<br>
+Имеется выживший из группы зачистки. Куратор: оператор №1.41, досье №ГДС00010. ФИО: Беркут Сергей Данилович, досье №КЛ00002.<br>
+Есть данные о закрытом сигнале из лаборатории. Возможно, Иван Соболев смог связаться с кем-то на поверхности.<br>
+Ваша задача: изучить взаимодействие Ивана Соболева и Сергея Беркута с остальными объектами, имеющими отношение к операции «ФБ-2021». Вам не о чем волноваться: поскольку это первая операция на данной точке с этим уровнем доступа, все данные вам предоставят наши сотрудники – команда Fandom Symbiont 2021. Только будьте осторожны – по нашим данным...<br><br>
+<span style="color:#ff1c37; font-weight: 1000;">...СИМБИОНТ ДОЛЖЕН БЫТЬ В КАЖДОМ</span><br><br>
+Поздравляем Вас! Вы настоящий герой!<br><br>
+Удачи :) </span>
+    </div>
+
+    <br>
+
+    <div class='icon' onclick="openwin(6)"  style='position: absolute; bottom:-9px;left:75px;'> <img src='icon2.png'/></div> 
+    <div class='icon' style='position: absolute; bottom:-9px;left:135px;'> <img src='2_2.png' /></div>
+    <div class='icon' style='position: absolute; bottom:-9px;left:200px'> <img src='icon1.png' /></div>
+    <div class='icon' style='position: absolute; bottom:-9px;left:275px;'> <img src='icon1_1.png' /></div>
+    <div class='icon' onclick='openclosewin(0)' style='position: absolute; bottom:1px;left:5px;'> <img src='page.png' style="width:100%; height:100%"/></div>
+
+    <div id="6" class='win' style='position: absolute; width:600px;height:500px;display:none; top:20px;left:40px'>
+      <div id='6header'>Файлы: X:\Проект "Метаморф"  <span onclick="closewin(6)" style="position:absolute;right:25px; top:3px; height:25px"> _ </span><span onclick="closewin(6)" style="position:absolute;right:10px; top:5px;">x</span></</div>
+      <div><br>
+        <span onclick='openwin(7)'><img src='list_full.png' style='position: relative; top:15px;'/> Сотрудники "Убежища М-2" </span><br>
+        <span onclick='openwin(12)'><img src='list_full.png' style='position: relative; top:15px;' /> Отряд "Клинок" </span><br>
+        <span onclick='openwin(13)'><img src='list_full.png' style='position: relative; top:15px;' /> Сотрудники GDC </span><br>
+        <span><img src='list_empty.png' style='position: relative; top:15px;'/> Мемы на случай зомбиапокалипсиса</span><br>
+      </div>
+    </div>
+    </div>
+
+    <div id="7" class='win' style='position: absolute; display: none; width: 700px; height: 500px; top: 113px; left: 259px;'>
+      <div id='7header'>Файлы: X:\Проект "Метаморф" \ Сотрудники "Убежища М-2" <span onclick="closewin(7)" style="position:absolute;right:25px; top:3px;">_</span><span onclick="closewin(7)" style="position:absolute;right:10px; top:5px;">x</span></div>
+      <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iii.png' ondblclick='openwin(8)' style='position: relative; top:5px;'/> Иван Соболев</span> <br>
+      <span id='999' ondblclick='collapse(888)'><img src='iii.png' style='position: relative; top:5px;'/> Иван Соболев</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iii.png' onclick='openwin(11)' style='position: relative; top:5px;'/> Ольга Шепелева</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iii.png' ondblclick='openwin(10)' style='position: relative; top:5px;'/> Афанасий Бут</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      
+    </div>
+
+    <div id='11' class='win' style='width: 300px; position: absolute; z-index: 11; display: none; top: 299px; left: 465px;'>
+        <div id='11header' style='z-index: 10;'> ! Ошибка ! <span onclick="closewin(11)"  style="position:absolute;right:25px; top:3px;"> _ </span><span style="position:absolute;right:10px; top:5px;" onclick="closewin(11)">x</span> </div>
+    <span ><br>Cервер оффлайн. <br> Объект был уничтожен в локальном хранилище. <br> Для полной информации подключитесь к сети.<br></span>
+    </div>
+
+            <div id='8' class='win' style='width:900px; height:900px; position: absolute; top:120px;left:80px; display: block; z-index: 11;'> 
+            <div id='8header'  style='width:1020px; z-index: 14;' > > Файлы: X:\Проект "Метаморф" \ Сотрудники "Убежища М-2"\Иван Соболев <span onclick="closewin(8)"  style="position:absolute;right:25px; top:3px;"> _ </span><span style="position:absolute;right:10px; top:5px;" onclick="closewin(8)">x</span></div>
+            <div style="position: absolute; left: 330px; top: 35px">
+            <span><br>ДОСЬЕ №М200001<br><br><br>
+                    Имя: Иван Евгеньевич Соболев<br><br>
+                    Род деятельности: доктор-нейробиолог<br><br>
+                    Место работы: Убежище М-2, отдел Б — зараженные ткани<br><br>
+                    Данные: 32 года. Брюнет. Рост 176 см. Вес 77 кг<br><br>
+                    Статус: ?????<br><br>
+                    Семья: Татьяна Соболева (жена), Алина Соболева (дочь)<br><br>
+                    Статус членов семьи: ?????<br><br>хочу ещё текста какого-нибудь<br>
+                    ну пожалуйста
+                    <br><br>a?
+                    
+                    </div>
+                    <span style="color:#ff1c37; font-weight: 1000; position: absolute; bottom:100px; text-shadow: 0px 0px 4px #FF0000;">! Объект особой важности. подлежит постоянному наблюдению сотрудника с уровнем допуска Ультра и выше !<br></span>
+
+                    </span>
+                    <div style="position: absolute; left:30px; top:35px"><img src='s.png' style="height:80%; width:80%"/></div>
+            </div>
+
+
+
+    <div id="12" class='win' style='position: absolute; left: 470px; display: none; width: 600px; height: 500px; top: 51px;'>
+      <div id='12header'> Файлы: X:\Проект "Метаморф" \Отряд "Клинок" <span onclick="closewin(12)" style="position:absolute;right:25px; top:3px;">_</span><span onclick="closewin(12)" style="position:absolute;right:10px; top:5px;">x</span></div>
+      <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iii.png' style='position: relative; top:5px;' onclick='openwin(14)'/> Сергей Беркут </span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+      <span><img src='iiii.png' style='position: relative; top:5px;' onclick='openwin(11)'/> [ ИНФОРМАЦИЯ УДАЛЕНА ]</span> <br>
+    </div>
+
+
+<div id='14' class='win' style='width:1120px; height:780px; position: absolute; top:25px;left:25px; display: none; z-index: 13;'> 
+            <div id='14header'  style='width:1120px; z-index: 14;' > > Файлы: X:\Проект "Метаморф" \Отряд "Клинок"\ Сергей Беркут<span onclick="closewin(14)"  style="position:absolute;right:25px; top:3px;"> _ </span><span style="position:absolute;right:10px; top:5px;" onclick="closewin(14)">x</span></div>
+            <span><br>ДОСЬЕ №М200001<br><br><br>
+                    Имя: Сергей Данилович Беркут<br><br>
+                    Род деятельности: доктор-нейробиолог<br><br>
+                    Место работы: Убежище М-2, отдел Б — зараженные ткани<br><br>
+                    Данные: 32 года. Брюнет. Рост 176 см. Вес 77 кг<br><br>
+                    Статус: ?????<br><br>
+                    Семья: Татьяна Соболева (жена), Алина Соболева (дочь)<br><br>
+                    Статус членов семьи: ?????<br><br><br>
+                    <span style="color:#ff1c37; font-weight: 1000;">! Объект особой важности. подлежит постоянному наблюдению сотрудника с уровнем допуска Ультра и выше !<br></span>
+
+                    </span>
+                    <div style="position: absolute; right:20px; top:15px"><img src='b.png' /></div>
+            </div>
+
+    <div id="13" class='win' style='position: absolute; left: 30px;display:none; width:600px;height:500px;'>
+      <div id='13header'>Файлы: X:\Проект "Метаморф" \ Сотрудники GDC <span onclick="closewin(13)" style="position:absolute;right:25px; top:3px;">_</span><span onclick="closewin(13)" style="position:absolute;right:10px; top:5px;">x</span></div>
+      <br>
+      <span onclick="warning()"><img src='ii.png' style='position: relative; top:5px;'/> [ ИНФОРМАЦИЯ НЕДОСТУПНА ]</span> <br>
+      <span onclick="warning()"><img src='ii.png' style='position: relative; top:5px;'/> [ ИНФОРМАЦИЯ НЕДОСТУПНА ]</span> <br>
+      <span onclick="warning()"><img src='iii.png' style='position: relative; top:5px;'/> ї╒їЮїБїЮїсїжїХ ї║їщїжїэїЦїяїъїуїБ </span> <br>
+      <span onclick="warning()"><img src='ii.png' style='position: relative; top:5px;'/> [ ИНФОРМАЦИЯ НЕДОСТУПНА ]</span> <br>
+      <span onclick="warning()"><img src='iii.png' style='position: relative; top:5px;'/> Владимир Жарков </span> <br>
+      <span onclick="warning()"><img src='iii.png' style='position: relative; top:5px;'/> ㎡㎽㎪㎮㏅㏖㏅㎿ ㏄㎿㎐㎒㏖㏀㏁ </span> <br>
+      <span onclick="warning()"><img src='ii.png' style='position: relative; top:5px;'/> [ ИНФОРМАЦИЯ НЕДОСТУПНА ]</span> <br>
+      <span onclick="warning()"><img src='ii.png' style='position: relative; top:5px;'/> [ ИНФОРМАЦИЯ НЕДОСТУПНА ]</span> <br>
+      <span onclick="warning()"><img src='ii.png' style='position: relative; top:5px;'/> [ ИНФОРМАЦИЯ НЕДОСТУПНА ]</span> <br>
+      <span onclick="warning()"><img src='ii.png' style='position: relative; top:5px;'/> [ ИНФОРМАЦИЯ НЕДОСТУПНА ]</span> <br>
+      <span onclick="warning()"><img src='ii.png' style='position: relative; top:5px;'/> [ ИНФОРМАЦИЯ НЕДОСТУПНА ]</span> <br>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    console.log('чё надо?? закрой обратно!');
+    function redirect() {
+        if (screen.width <= 480) {
+        window.location = "https://gdccorpmain.000webhostapp.com/password/mobile.html";
+        }
+    }
+    
+    function openwin(m) {
+        if (document.getElementById(m).style.display == 'none') {
+            document.getElementById(m).style.display = 'block';
+            console.log('открыто ок');
+
+        }
+        else {
+
+        }
+    }
+
+    function openclosewin(num)
+    { 
+        if (document.getElementById(num).style.display == 'none') {
+            document.getElementById(num).style.display = 'block';
+        }
+        else {
+            console.log('закрытооткрыто ок');
+            document.getElementById(num).classList.add('winclose');
+            setTimeout(actclose, 980,num);
+        }
+    }
+    
+ function closewin(n) {
+        if (document.getElementById(n).style.display != 'none') {
+            console.log('закрыто ок');
+            document.getElementById(n).classList.add('winclose');
+            setTimeout(actclose, 980,n);
+            
+        }
+        else {
+
+        }
+
+    }
+ function actclose(n) {
+    document.getElementById(n).style.display = 'none';
+    document.getElementById(n).classList.remove('winclose');
+ }
+
+
+  function closewinn(n) {
+        if (document.getElementById(n).style.display != 'none') {
+            document.getElementById(n).classList.add('winclose1');
+            setTimeout(actclosee, 980,n);
+            
+        }
+        else {
+
+        }
+
+    }
+ function actclosee(n) {
+    document.getElementById(n).style.display = 'none';
+    document.getElementById(n).classList.remove('winclose1');
+ }
+
+
+    dragElement(document.getElementById('5'));
+    dragElement(document.getElementById('6'));
+    dragElement(document.getElementById('7'));
+    dragElement(document.getElementById('12'));
+    dragElement(document.getElementById('13'));
+    dragElement(document.getElementById('11'));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+        }
+    }
+
+
+  function collapse(n) {
+    document.getElementById(n).style.display = 'none';
+  }
+
+  function rr () {
+    console.log('ну и куда ты лезешь, м?');
+    closewinn(1000);
+  }
+  function warning() {
+      document.getElementById(1000).style.display = 'block';
+      setTimeout(rr,2000);
+      
+  }
+
+
+    setTimeout(closewin,3000,-1);
+    setTimeout(closewinn,3000,-2);
+
+</script> 
+</body>
+
+
+</html>
+

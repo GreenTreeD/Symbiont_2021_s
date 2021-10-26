@@ -1,0 +1,7 @@
+
+# HTID:17534642: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+AuthType Basic
+AuthName "You are welcome"
+AuthUserFile "/storage/ssd3/478/15988478/public_html/password/.htpasswd"
+Require user server
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:17534642:

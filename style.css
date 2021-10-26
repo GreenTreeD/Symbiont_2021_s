@@ -1,0 +1,344 @@
+
+ a {    cursor: help;
+    text-decoration: none; /* Îòìåíÿåì ïîä÷åðêèâàíèå ó ññûëêè */
+   } 
+
+@keyframes spoiler {
+  0% { opacity: 0.0;}
+  49% { opacity: 0.0;}
+  50% { opacity: 1.0; }
+  57% { opacity: 1.0; }
+  58% { opacity: 0.0;}
+  100% { opacity: 0.0; }
+}
+
+
+@keyframes window {
+  0% {transform: scale(0, 0);
+    background-color:#33FFCE;} 
+  
+  20%
+    {transform:scale(0.2, 0.002);
+    background-color:#33FFCE;}
+  55%
+    {transform:scale(1, 0.002);
+    background-color:#33FFCE;}
+  60% {
+    transform:scale(1, 0.2);
+    background-color:#33FFCE;
+  } 
+  100%
+    {transform:scale(1, 1);
+    background-color:#072b22b8;}
+}
+
+@-webkit-keyframes window {
+  0% { transform: scale(0, 0);
+    background-color:#33FFCE;} 
+  20%
+    {transform:scale(0.2, 0.002);
+    background-color:#33FFCE;}
+  55%
+    {transform:scale(1, 0.002);
+    background-color:#33FFCE;}
+  60% {
+    transform:scale(1, 0.2);
+    background-color:#33FFCE;;
+  } 
+  100%
+    {transform:scale(1, 1);
+    background-color:rgba(255, 255, 255, 0.01);}
+}
+
+@keyframes windowq {
+  0% {transform:scale(1, 1);
+    background-color:rgba(255, 255, 255, 0.01);}
+  
+  20%{
+    transform:scale(1, 0.2);
+    background-color:#33FFCE;} 
+  55%
+    {transform:scale(1, 0.002);
+    background-color:#33FFCE;}
+  60% 
+  {transform:scale(0.2, 0.002);
+    background-color:#072b22b8;}
+  100%
+    {transform: scale(0, 0);
+    background-color:#072b22b8;} 
+}
+
+@keyframes windowq1 {
+  0% {transform:scale(1, 1);
+    background-color:rgba(255, 255, 255, 0.01);}
+  
+  20%{
+    transform:scale(1, 0.2);
+    background-color:#ff001e;} 
+  55%
+    {transform:scale(1, 0.002);
+    background-color:#ff001e;}
+  60% 
+  {transform:scale(0.2, 0.002);
+    background-color:#ff001e;}
+  100%
+    {transform: scale(0, 0);
+    background-color:#ff001e;} 
+}
+
+@-webkit-keyframes windowq {
+  0% {transform:scale(1, 1);
+    background-color:rgba(255, 255, 255, 0.01);}
+  
+  20%{
+    transform:scale(1, 0.2);
+    background-color:#33FFCE;} 
+  55%
+    {transform:scale(1, 0.002);
+    background-color:#33FFCE;}
+  60% 
+  {transform:scale(0.2, 0.002);
+    background-color:#33FFCE;}
+  100%
+    {transform: scale(0, 0);
+    background-color:#33FFCE;} 
+
+}
+
+
+
+@keyframes n {
+  0% {transform: scale(0, 0);
+    background-color:#bf1b2e;} 
+  
+  20%
+    {transform:scale(0.2, 0.002);
+    background-color:#bf1b2e;}
+  55%
+    {transform:scale(1, 0.002);
+    background-color:#bf1b2e;}
+  60% {
+    transform:scale(1, 0.2);
+    background-color:#bf1b2e;
+  } 
+  100%
+    {transform:scale(1, 1);
+    background-color:rgba(255, 255, 255, 0.01);}
+}
+
+.nono {
+  border: 4px solid #ff1c37;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  background-color: rgba(255, 0, 30, 0.3);
+  font-family: 'Ubuntu Mono', monospace;
+  color:#ff1c37 !important;
+  padding:15px;
+  box-shadow: inset 0px 0px 10px 4px #bf1b2e, 0px 0px 10px 4px #bf1b2e !important;
+  -webkit-box-shadow: inset 0px 0px 10px 4px #bf1b2e, 0px 0px 10px 4px #bf1b2e !important;
+  width:350px; height:30px; position: absolute; top:350px;left:400px; z-index: 20;
+  -webkit-animation:  1s linear 0s 1 normal running n;
+     -moz-animation:  1s linear 0s 1 normal running n;
+       -o-animation:  1s linear 0s 1 normal running n;
+          animation:  1s linear 0s 1 normal running n;
+
+}  
+
+.bigbraintime {
+  opacity: 0%;
+  display: inherit; /* эй эй поменяй это значение на none */
+}
+
+.cursortop { 
+    font-weight: 1000;
+    display: inline-block; 
+    animation: blink 2s linear infinite;
+    line-height: 2;
+    font-family: 'Press Start 2P', cursive;
+    color:#2CA900 ;
+    text-shadow: 0 0 10px #2CA900;
+}
+
+.cursor { 
+    font-weight: 1000;
+    display: inline-block; 
+    animation: blink 1s linear infinite;
+    line-height: 2;
+    font-family: 'Press Start 2P', cursive;
+    color:#2CA900 ;
+    text-shadow: 0 0 10px #2CA900;
+}
+
+span {
+ color:#33FFCE;
+ padding: 3px; 
+}
+.panel {
+  padding: 8px;
+  margin:10px;
+}
+.panel:hover {
+  border: 1px;
+  box-shadow: 0px 0px 10px 1px #348A7B;
+}
+body {
+    background-color: black;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;      
+}
+.bg {
+  font-family: 'Share Tech Mono', monospace;
+  color:#9ea2b8;
+}
+.container {
+  background: url(fon.png) ;
+ /* background:  radial-gradient(circle, rgba(27,98,90,1) 0%, rgba(0,0,0,1) 100%); */
+  width: 1200px;
+  height: 910px;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #212121 ;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 20px;
+  margin:auto;
+}
+
+.winclose {
+  -webkit-animation: 1s linear infinite normal windowq !important;
+     -moz-animation: 1s linear infinite normal windowq !important;
+       -o-animation: 1s linear infinite normal windowq !important;
+          animation: 1s linear infinite normal windowq !important;
+}
+
+.winclose1 {
+  -webkit-animation: 1s linear infinite normal windowq1 !important;
+     -moz-animation: 1s linear infinite normal windowq1 !important;
+       -o-animation: 1s linear infinite normal windowq1 !important;
+          animation: 1s linear infinite normal windowq1 !important;
+}
+
+.winop {
+  border: 1px solid #33FFCE;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(3px);
+  background-color: #072b2285;
+  font-family: 'Ubuntu Mono', monospace;
+  color:#33FFCE;
+  padding:15px;
+  box-shadow: inset 0px 0px 10px 1px #348A7B, 0px 0px 10px 1px #348A7B;
+  -webkit-box-shadow: inset 0px 0px 10px 1px #348A7B, 0px 0px 10px 1px #348A7B;
+ }
+
+.win {
+  border: 1px solid #33FFCE;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(3px);
+  background-color: #072b22b8;
+  font-family: 'Ubuntu Mono', monospace;
+  color:#33FFCE;
+  padding:8px;
+  box-shadow: inset 0px 0px 10px 1px #348A7B, 0px 0px 10px 1px #348A7B;
+  -webkit-box-shadow: inset 0px 0px 10px 1px #348A7B, 0px 0px 10px 1px #348A7B;
+  -webkit-animation:  1s linear 0s 1 normal running window;
+     -moz-animation:  1s linear 0s 1 normal running window;
+       -o-animation:  1s linear 0s 1 normal running window;
+          animation:  1s linear 0s 1 normal running window;
+
+}
+
+
+.winbreak {
+  border: 4px solid #ff1c37;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  background-color: rgba(255, 0, 30, 0.3);
+  font-family: 'Ubuntu Mono', monospace;
+  color:#ff1c37 !important;
+  padding:15px;
+  box-shadow: inset 0px 0px 10px 4px #bf1b2e, 0px 0px 10px 4px #bf1b2e !important;
+  -webkit-box-shadow: inset 0px 0px 10px 4px #bf1b2e, 0px 0px 10px 4px #bf1b2e !important;
+ }
+
+.container::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+.container::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 100;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+
+.main { 
+  padding: 50px;
+  position: absolute; top: 0px;
+  font-family: 'Ubuntu Mono', monospace;
+  width: 1200px;
+  margin: auto;
+  height: 700px;
+  background: url(fon.png) ;
+}
+
+
+.spoiler { 
+  cursor: wait;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+  z-index: 3;
+  background: #2CA900;  
+  color: #333333;
+  position: absolute;
+  animation: spoiler 10s linear infinite;
+  line-height: 1;
+}
+
+.glitch { 
+    line-height: 2;
+    display:-moz-inline-stack;
+    display: inline-block;
+    color: #2CA900;
+    -webkit-animation-name:shake;
+    -webkit-animation-duration:3s;
+    -webkit-animation-timing-function:ease-in;
+    -webkit-animation-delay:1s;
+    -webkit-animation-play-state:active;
+    -webkit-animation-iteration-count:infinite;
+}
+
+.icon {
+  width:50px;
+  height:70px;
+}
+
+#openpage {
+}
+
+hr {
+  color: #33FFCE;
+  background-color: #33FFCE;
+
+  box-shadow: inset 0px 0px 10px 1px #348A7B, 0px 0px 10px 1px #348A7B;
+}
