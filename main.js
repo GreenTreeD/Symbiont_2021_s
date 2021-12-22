@@ -11,6 +11,8 @@ check()
 
 
     console.log('чё надо?? закрой обратно!');
+
+    
     function redirect() {
         if (screen.width <= 480) {
         window.location = "https://gdccorpmain.000webhostapp.com/password/mobile.html";
